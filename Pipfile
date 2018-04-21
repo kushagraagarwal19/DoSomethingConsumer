@@ -1,5 +1,5 @@
 [packages]
-pika="0.11.2"
+pika="*"
 
 [requires]
 python_version = "3.6"
