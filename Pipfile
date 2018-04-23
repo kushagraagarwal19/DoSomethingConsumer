@@ -1,5 +1,7 @@
 [packages]
 pika="*"
+json="*"
+smtplib="*"
 
 [requires]
 python_version = "3.6"
