@@ -21,9 +21,7 @@ def callback(ch, method, properties, body):
     print(" [x] Received %r" % body)
     msg = body.decode("utf-8")
     msg = json.loads(msg)
-
-    # toEmail = 'dscodetest@mailinator.com'
-    toEmail = 'ka1745@nyu.edu'
+    toEmail = 'dscodetest@mailinator.com'
     
     birthday = msg['birthday']
     first_name = msg['firstName']
@@ -48,5 +46,5 @@ def callback(ch, method, properties, body):
 
 channel.basic_consume(callback, queue=queue, no_ack=True)
 
-print(' [*] Waiting for messages:')
+print('[*] Waiting for messages:')
 channel.start_consuming()
