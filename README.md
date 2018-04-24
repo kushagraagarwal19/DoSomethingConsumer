@@ -2,7 +2,7 @@
 A consumer script that fetches the items from the CloudAMQP queue and send the information to a service account (dscodetest@mailinator.com)
 
 ## Installation
-pip install -r requirements.txt
+pip install -r pip_requirements.txt
 
 ## Running
 After installation the can can be run locally or on a server. Since we have to run this app continuously, I have hosted it on heroku.
