@@ -27,8 +27,7 @@ def callback(ch, method, properties, body):
     msg = json.loads(msg)
 
     # dscodetest@mailinator.com
-    # toEmail = os.environ['TO_EMAIL']
-    toEmail = 'ka1745@nyu.edu'
+    toEmail = os.environ['TO_EMAIL']
     
     birthday = msg['birthday']
     first_name = msg['firstName']
