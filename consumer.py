@@ -2,7 +2,6 @@
 import pika
 import smtplib
 import json
-import credentials
 import os
 
 # Reading the credentials from environment variables
